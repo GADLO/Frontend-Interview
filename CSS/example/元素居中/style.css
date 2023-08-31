@@ -1,0 +1,102 @@
+.horizon-center {
+    text-align: center;
+}
+
+.vertical-center-singleline {
+    height: 50px;
+    line-height: 50px;
+}
+
+.vertical-center-multiline {
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.horizon-vertical-center {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* or
+    #parent {
+        position: relative;
+        width: 500px;
+        height: 300px;
+        background-color: skyblue;
+    }
+    
+    #child {
+        position: absolute;
+        background-color: green;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    */
+}
+
+.relative {
+    height: 50px;
+    position: relative;
+}
+
+.block-parent-vertical {
+    position: absolute;
+    top: 50%;
+    margin-top: -12.5px;
+    height: 25px;
+}
+
+.block-parent {
+    display: block;
+}
+
+.block-child-width {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.block-child {
+    /* or display: inline */
+    display: inline-block;
+}
+
+.block-float-child {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.block-flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+h1 {
+    text-align: center;
+    border-bottom: 5px solid orangered;
+    margin-top: 50px;
+}
+
+section {
+    margin-top: 20px;
+    height: 50px;
+    border: 5px solid rebeccapurple;
+}
+
+section:nth-of-type(3),
+section:nth-of-type(4),
+section:nth-of-type(5) {
+    position: relative;
+    text-align: center;
+    border: 5px solid forestgreen;
+}
+
+section:nth-of-type(6) {
+    position: relative;
+    text-align: center;
+    border: 5px solid forestgreen;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>水平居中（行内）</h1>
+    <section>
+        <span class="block-parent horizon-center">
+            父级元素为行内元素，水平居中
+        </span>
+    </section>
+    <section class="horizon-center">
+        <span>
+            父级元素为块级元素，水平居中
+        </span>
+    </section>
+
+    <h1>水平居中（块级）</h1>
+    <section>
+        <div class="block-child-width">父级元素为块级元素，自带宽度<code>widh:400px</code>，水平居中</div>
+    </section>
+    <section>
+        <div class="block-child">父级元素为块级元素，无宽度，水平居中</div>
+    </section>
+    <section>
+        <div class="block-float-child">父级元素为块级元素，无宽度，设置绝对定位，水平居中</div>
+    </section>
+    <section>
+        <div class="block-flex">
+            <div>父级元素为块级元素，无宽度，flex布局，垂直居中</div>
+        </div>
+    </section>
+
+    <h1>垂直居中（行内）</h1>
+    <section>
+        <span class="vertical-center-singleline"><span>父级元素为行内元素，无宽度，垂直居中,父级元素为行内元素，无宽度，垂直居中</span></span>
+    </section>
+    <section>
+        <div class="vertical-center-multiline ">
+
+            <span>父级元素为行内元素，无宽度，垂直居中,父级元素为行内元素，无宽度，垂直居中,父级元素为行内元素，无宽度，垂直居中,父级元素为行内元素，无宽度，垂直居中</span>
+        </div>
+
+    </section>
+
+    <h1>垂直居中（块级）</h1>
+    <section>
+        <div class="block-parent relative">
+            <div class="block-parent block-parent-vertical">父级元素为块级元素，无宽度，垂直居中</div>
+        </div>
+    </section>
+    <section>
+        <div class="block-parent" style="display: flex; align-items: center; height: 50px;">
+            <div>父级元素为块级元素，无宽度，垂直居中</div>
+        </div>
+    </section>
+
+    <h1>水平垂直居中</h1>
+    <section>
+        <div class="horizon-vertical-center">
+            <div>父级元素为元素，无宽度，，垂直居中</div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
